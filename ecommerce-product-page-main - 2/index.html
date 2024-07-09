@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-icon">
+            <div class="nav-barger-icon" id="navBargerIcon" >
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" ><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+            </div>
+            <img src="/ecommerce-product-page-main/images/logo.svg" alt="">
+        </div>
+        <aside class="nav-cat d-none" id="navList">
+            <div id="nav-close">
+                <img src="/ecommerce-product-page-main/images/icon-close.svg" alt="">
+            </div>
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </aside>
+        <div class="nav-items">
+            <div>
+                <div id="cart-notification"></div>
+                <img src="/ecommerce-product-page-main/images/icon-cart.svg" alt="" id="cart">
+            </div>
+            <div>
+                <img src="/ecommerce-product-page-main/images/image-avatar.png" class="nav-profile" alt="">
+            </div>
+            
+        </div>
+    </nav>
+<!-- Navbar ends -->
+
+<!-- curosel -->
+
+    <section class="banner-section">
+        <div class="banner-section-con">
+            <div class="banner-container" id="banner">
+                <div class="banner-img">
+                    <div id="banner-previous">
+                        <img src="/ecommerce-product-page-main/images/icon-previous.svg" alt="">
+                    </div>
+                    <div id="banner-next">
+                        <img src="/ecommerce-product-page-main/images/icon-next.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="small-banner-pic-container d-none">
+                <div >
+                    <img src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" class="selected" id="temp-img1">
+                    <img src="/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="" id="temp-img2">
+                    <img src="/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="" id="temp-img3">
+                    <img src="/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="" id="temp-img4">
+                </div>
+        
+            </div>
+        </div>
+
+        </div>
+        <div class="product-description">
+            <p class="product-name">SNEAKER COMPANY</p>
+            <h1 id="Pro-name">Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole , they'll withstand everything the weather can offer. </p>
+            <div class="price">
+                <div><span>$125.00</span> <mark>50%</mark> </div>
+                <p>$250.00</p>
+            </div>
+            <div class="lap-view">
+                <div class="cart-count">
+                    <img id="cartDecrease" src="/ecommerce-product-page-main/images/icon-minus.svg" alt="cart-decrease">
+    
+                    <p class="cart-item-count" id="cart-item-count">1</p>
+    
+                    <img src="/ecommerce-product-page-main/images/icon-plus.svg" id="cartIncrease" alt="">
+                </div>
+                <div class="addToCartBtn" id="addToCartBtn">
+                    <button><img src="/ecommerce-product-page-main/images/icon-cart.svg" alt="" > Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- cart-modal -->
+     
+        <div class="model-container d-none1" id="model">
+            <h1>Cart</h1>
+            <hr>
+            <div class="model-inside" >
+                <img src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" id="cart-image">
+                <div>
+                    <p id="cart-product-name">Cart is empty</p><br>
+                <p id="cart-price"></p><span id="cart-total-price"></span></p>
+                </div>
+                <img src="/ecommerce-product-page-main/images/icon-delete.svg" alt="" id="trash-img">
+            </div>
+            <p class="emptyMsg"></p>
+            <button class="btn">CheckOut</button>
+
+        </div>
+
+
+        <div class="image-full-view-container d-none2">
+            <img src="/ecommerce-product-page-main/images/icon-close.svg" alt="" class="close">
+            <div class="full-view-bg-container">
+                <div class="banner-img2">
+                    <div id="full-view-banner-previous">
+                        <img src="/ecommerce-product-page-main/images/icon-previous.svg" alt="">
+                    </div>
+                    <div id="full-view-banner-next">
+                        <img src="/ecommerce-product-page-main/images/icon-next.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="full-view-temp-img">
+                <img src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" id="full-view-temp-img1" class="selected">
+                <img src="/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="" id="full-view-temp-img2">
+                <img src="/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="" id="full-view-temp-img3">
+                <img src="/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="" id="full-view-temp-img4">
+            </div>
+        </div>
+
+
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Nirmal Kumar</a></div>
+              
+          </div>
+    </footer>
+    <script src="/app.js"></script> 
+</body>
+</html>
